@@ -1,0 +1,15 @@
+C:\Users\Mir\MyLife\Courses\FormacaoDOTNET\Bank\Bank\bin\Debug\netcoreapp3.1\Bank.exe
+C:\Users\Mir\MyLife\Courses\FormacaoDOTNET\Bank\Bank\bin\Debug\netcoreapp3.1\Bank.deps.json
+C:\Users\Mir\MyLife\Courses\FormacaoDOTNET\Bank\Bank\bin\Debug\netcoreapp3.1\Bank.runtimeconfig.json
+C:\Users\Mir\MyLife\Courses\FormacaoDOTNET\Bank\Bank\bin\Debug\netcoreapp3.1\Bank.runtimeconfig.dev.json
+C:\Users\Mir\MyLife\Courses\FormacaoDOTNET\Bank\Bank\bin\Debug\netcoreapp3.1\Bank.dll
+C:\Users\Mir\MyLife\Courses\FormacaoDOTNET\Bank\Bank\bin\Debug\netcoreapp3.1\Bank.pdb
+C:\Users\Mir\MyLife\Courses\FormacaoDOTNET\Bank\Bank\obj\Debug\netcoreapp3.1\Bank.csproj.AssemblyReference.cache
+C:\Users\Mir\MyLife\Courses\FormacaoDOTNET\Bank\Bank\obj\Debug\netcoreapp3.1\Bank.Form1.resources
+C:\Users\Mir\MyLife\Courses\FormacaoDOTNET\Bank\Bank\obj\Debug\netcoreapp3.1\Bank.csproj.GenerateResource.cache
+C:\Users\Mir\MyLife\Courses\FormacaoDOTNET\Bank\Bank\obj\Debug\netcoreapp3.1\Bank.AssemblyInfoInputs.cache
+C:\Users\Mir\MyLife\Courses\FormacaoDOTNET\Bank\Bank\obj\Debug\netcoreapp3.1\Bank.AssemblyInfo.cs
+C:\Users\Mir\MyLife\Courses\FormacaoDOTNET\Bank\Bank\obj\Debug\netcoreapp3.1\Bank.csproj.CoreCompileInputs.cache
+C:\Users\Mir\MyLife\Courses\FormacaoDOTNET\Bank\Bank\obj\Debug\netcoreapp3.1\Bank.dll
+C:\Users\Mir\MyLife\Courses\FormacaoDOTNET\Bank\Bank\obj\Debug\netcoreapp3.1\Bank.pdb
+C:\Users\Mir\MyLife\Courses\FormacaoDOTNET\Bank\Bank\obj\Debug\netcoreapp3.1\Bank.genruntimeconfig.cache
