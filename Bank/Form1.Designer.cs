@@ -157,7 +157,7 @@ namespace Bank
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.groupBox1.Location = new System.Drawing.Point(278, 118);
+            this.groupBox1.Location = new System.Drawing.Point(17, 122);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(387, 394);
             this.groupBox1.TabIndex = 10;
@@ -169,7 +169,7 @@ namespace Bank
             this.btnBalanceReport.BackColor = System.Drawing.SystemColors.HotTrack;
             this.btnBalanceReport.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnBalanceReport.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnBalanceReport.Location = new System.Drawing.Point(278, 527);
+            this.btnBalanceReport.Location = new System.Drawing.Point(17, 531);
             this.btnBalanceReport.Name = "btnBalanceReport";
             this.btnBalanceReport.Size = new System.Drawing.Size(387, 40);
             this.btnBalanceReport.TabIndex = 11;
@@ -179,7 +179,8 @@ namespace Bank
             // 
             // textIndex
             // 
-            this.textIndex.Location = new System.Drawing.Point(278, 12);
+            this.textIndex.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textIndex.Location = new System.Drawing.Point(17, 16);
             this.textIndex.Multiline = true;
             this.textIndex.Name = "textIndex";
             this.textIndex.Size = new System.Drawing.Size(387, 30);
@@ -190,7 +191,7 @@ namespace Bank
             this.btnSearch.BackColor = System.Drawing.SystemColors.Highlight;
             this.btnSearch.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnSearch.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnSearch.Location = new System.Drawing.Point(511, 48);
+            this.btnSearch.Location = new System.Drawing.Point(250, 52);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(154, 40);
             this.btnSearch.TabIndex = 10;
@@ -202,7 +203,7 @@ namespace Bank
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(925, 590);
+            this.ClientSize = new System.Drawing.Size(421, 590);
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.textIndex);
             this.Controls.Add(this.btnBalanceReport);

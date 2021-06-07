@@ -87,34 +87,34 @@ namespace Bank
 
         private void btnBalanceReport_Click(object sender, EventArgs e)
         {
-            PersonalAccount c1 = new PersonalAccount();
-            c1.AccountNumber = 1;
-            c1.SendOpValue(100);
+            //PersonalAccount c1 = new PersonalAccount();
+            //c1.AccountNumber = 1;
+            //c1.SendOpValue(100);
 
-            PersonalAccount c2 = new PersonalAccount();
-            c2.SendOpValue(200);
+            //PersonalAccount c2 = new PersonalAccount();
+            //c2.SendOpValue(200);
 
-            PersonalAccount cp1 = new SavingAccount();
-            c1.AccountNumber = 1;
-            cp1.SendOpValue(200);
+            //PersonalAccount cp1 = new SavingAccount();
+            //c1.AccountNumber = 1;
+            //cp1.SendOpValue(200);
 
-            AccountBalanceTotalizer tc = new AccountBalanceTotalizer();
-            tc.SumValue(c1);
-            tc.SumValue(c2);
-            tc.SumValue(cp1);
+            //AccountBalanceTotalizer tc = new AccountBalanceTotalizer();
+            //tc.SumValue(c1);
+            //tc.SumValue(c2);
+            //tc.SumValue(cp1);
 
-            MessageBox.Show($"Saldo total: {tc.TotalValue}");
+            //MessageBox.Show($"Saldo total: {tc.TotalValue}");
         }
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
-            int index = Convert.ToInt32(textIndex.Text);
+            //int index = Convert.ToInt32(textIndex.Text);
 
-            PersonalAccount selectedAccount = newAccount[index];
+            //PersonalAccount selectedAccount = newAccount[index];
 
-            textOwnerAccount.Text = selectedAccount.OwnerAccount.Name;
-            textAccountNumber.Text = Convert.ToString(selectedAccount.AccountNumber);
-            textBalance.Text = Convert.ToString(selectedAccount.Balance);
+            //textOwnerAccount.Text = selectedAccount.OwnerAccount.Name;
+            //textAccountNumber.Text = Convert.ToString(selectedAccount.AccountNumber);
+            //textBalance.Text = Convert.ToString(selectedAccount.Balance);
 
 
             //int[] numeros = new int[3];
@@ -126,6 +126,25 @@ namespace Bank
             //{
             //    MessageBox.Show($"{numeros[i]}");
             //}
+
+            PersonalAccount c1 = new PersonalAccount();
+            c1.SendOpValue(10);
+
+            PersonalAccount c2 = new PersonalAccount();
+            c2.SendOpValue(30);
+
+            PersonalAccount c3 = new PersonalAccount();
+            c3.SendOpValue(50);
+
+            PersonalAccount[] accounts = new PersonalAccount[3];
+            accounts[0] = c1;
+            accounts[1] = c2;
+            accounts[2] = c3; 
+
+            foreach (var xx in accounts)
+            {
+                MessageBox.Show($"O saldo da conta: {xx.Balance}");
+            }
         }
     }
 }
