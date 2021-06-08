@@ -41,9 +41,11 @@ namespace Bank
             this.label4 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnBalanceReport = new System.Windows.Forms.Button();
-            this.textIndex = new System.Windows.Forms.TextBox();
-            this.btnSearch = new System.Windows.Forms.Button();
+            this.comboBoxAccounts = new System.Windows.Forms.ComboBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // textOwnerAccount
@@ -157,7 +159,7 @@ namespace Bank
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.groupBox1.Location = new System.Drawing.Point(17, 122);
+            this.groupBox1.Location = new System.Drawing.Point(22, 163);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(387, 394);
             this.groupBox1.TabIndex = 10;
@@ -169,7 +171,7 @@ namespace Bank
             this.btnBalanceReport.BackColor = System.Drawing.SystemColors.HotTrack;
             this.btnBalanceReport.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnBalanceReport.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnBalanceReport.Location = new System.Drawing.Point(17, 531);
+            this.btnBalanceReport.Location = new System.Drawing.Point(22, 589);
             this.btnBalanceReport.Name = "btnBalanceReport";
             this.btnBalanceReport.Size = new System.Drawing.Size(387, 40);
             this.btnBalanceReport.TabIndex = 11;
@@ -177,35 +179,44 @@ namespace Bank
             this.btnBalanceReport.UseVisualStyleBackColor = false;
             this.btnBalanceReport.Click += new System.EventHandler(this.btnBalanceReport_Click);
             // 
-            // textIndex
+            // comboBoxAccounts
             // 
-            this.textIndex.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textIndex.Location = new System.Drawing.Point(17, 16);
-            this.textIndex.Multiline = true;
-            this.textIndex.Name = "textIndex";
-            this.textIndex.Size = new System.Drawing.Size(387, 30);
-            this.textIndex.TabIndex = 10;
+            this.comboBoxAccounts.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.comboBoxAccounts.FormattingEnabled = true;
+            this.comboBoxAccounts.Location = new System.Drawing.Point(32, 48);
+            this.comboBoxAccounts.Name = "comboBoxAccounts";
+            this.comboBoxAccounts.Size = new System.Drawing.Size(323, 33);
+            this.comboBoxAccounts.TabIndex = 12;
+            this.comboBoxAccounts.SelectedIndexChanged += new System.EventHandler(this.comboBoxAccounts_SelectedIndexChanged);
             // 
-            // btnSearch
+            // groupBox2
             // 
-            this.btnSearch.BackColor = System.Drawing.SystemColors.Highlight;
-            this.btnSearch.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnSearch.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnSearch.Location = new System.Drawing.Point(250, 52);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(154, 40);
-            this.btnSearch.TabIndex = 10;
-            this.btnSearch.Text = "Buscar";
-            this.btnSearch.UseVisualStyleBackColor = false;
-            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
+            this.groupBox2.Controls.Add(this.label5);
+            this.groupBox2.Controls.Add(this.comboBoxAccounts);
+            this.groupBox2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.groupBox2.Location = new System.Drawing.Point(22, 46);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(387, 100);
+            this.groupBox2.TabIndex = 13;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Buscar Conta";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label5.Location = new System.Drawing.Point(32, 26);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(47, 19);
+            this.label5.TabIndex = 13;
+            this.label5.Text = "Titular";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(421, 590);
-            this.Controls.Add(this.btnSearch);
-            this.Controls.Add(this.textIndex);
+            this.ClientSize = new System.Drawing.Size(435, 660);
+            this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.btnBalanceReport);
             this.Controls.Add(this.groupBox1);
             this.Name = "Form1";
@@ -214,8 +225,9 @@ namespace Bank
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -233,8 +245,10 @@ namespace Bank
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button btnBalanceReport;
-        private System.Windows.Forms.TextBox textIndex;
         private System.Windows.Forms.Button btnSearch;
+        private System.Windows.Forms.ComboBox comboBoxAccounts;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Label label5;
     }
 }
 

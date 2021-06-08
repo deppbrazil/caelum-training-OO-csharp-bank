@@ -3,21 +3,13 @@ using System.Collections.Generic;
 using System.Text;
 
 namespace Bank
-{
+{   // SavingAccount inherit PersonalAccount
     class SavingAccount : PersonalAccount
     {
-        public SavingAccount()
-        {
-
-        }
-        public SavingAccount(int AccountNumber): base(AccountNumber)
-        {
-
-        }
+        // Overrride subscribe GetOpValue method
         public override void GetOpValue(double OpValue)
         {
             base.GetOpValue(OpValue + 0.10);
         }
-
     }
 }
