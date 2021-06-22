@@ -14,3 +14,4 @@ C:\Users\Mir\MyLife\Courses\FormacaoDOTNET\Bank\Bank\obj\Debug\netcoreapp3.1\Ban
 C:\Users\Mir\MyLife\Courses\FormacaoDOTNET\Bank\Bank\obj\Debug\netcoreapp3.1\Bank.pdb
 C:\Users\Mir\MyLife\Courses\FormacaoDOTNET\Bank\Bank\obj\Debug\netcoreapp3.1\Bank.genruntimeconfig.cache
 C:\Users\Mir\MyLife\Courses\FormacaoDOTNET\Bank\Bank\obj\Debug\netcoreapp3.1\Bank.Properties.Resources.resources
+C:\Users\Mir\MyLife\Courses\FormacaoDOTNET\Bank\Bank\obj\Debug\netcoreapp3.1\Bank.FormAddAccount.resources

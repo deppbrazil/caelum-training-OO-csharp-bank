@@ -16,29 +16,34 @@ namespace Bank
         {
             InitializeComponent();
         }
+        // Controller for array position
+        private int accountNumber;
 
         // 1 - Transform a variable as array
         private PersonalAccount[] accounts;
 
         private void Form1_Load(object sender, EventArgs e)
-        {   
+        {
+            // 3 - Create account's array
+            this.accounts = new PersonalAccount[10];
+
             // 2 - Create accounts
             PersonalAccount account1 = new PersonalAccount()
             {
                 OwnerAccount = new NewClient("John"),
-                AccountNumber = 1
+                //AccountNumber = 1
             };
 
             PersonalAccount account2 = new PersonalAccount()
             {
                 OwnerAccount = new NewClient("Kendra"),
-                AccountNumber = 2
+                //AccountNumber = 2
             };
 
             PersonalAccount account3 = new PersonalAccount()
             {
                 OwnerAccount = new NewClient("Maike"),
-                AccountNumber = 3
+                //AccountNumber = 3
             };
 
             // 3 - Create an array accounts
@@ -46,8 +51,13 @@ namespace Bank
 
             // 4 - Add the accounts at array
             accounts[0] = account1;
+            accountNumber++;
+            
             accounts[1] = account2;
+            accountNumber++;
+            
             accounts[2] = account3;
+            accountNumber++;
 
             // 5 - Add the accounts at comboBox
             foreach (var account in accounts)
@@ -104,14 +114,14 @@ namespace Bank
         private void btnBalanceReport_Click(object sender, EventArgs e)
         {
             PersonalAccount c1 = new PersonalAccount();
-            c1.AccountNumber = 1;
+            //c1.AccountNumber = 1;
             c1.SendOpValue(100);
 
             PersonalAccount c2 = new PersonalAccount();
             c2.SendOpValue(200);
 
             PersonalAccount cp1 = new SavingAccount();
-            c1.AccountNumber = 1;
+            //c1.AccountNumber = 1;
             cp1.SendOpValue(200);
 
             AccountBalanceTotalizer tc = new AccountBalanceTotalizer();
@@ -135,5 +145,21 @@ namespace Bank
             textAccountNumber.Text = Convert.ToString(accountSelected.AccountNumber);
             textBalance.Text = Convert.ToString(accountSelected.Balance);
         }
+        
+        private void btnAddAccount_Click(object sender, EventArgs e)
+        {
+            // Create new register form instance
+            FormAddAccount faa = new FormAddAccount(this);
+
+            // Show register form
+            faa.ShowDialog();
+        }
+
+        // Method for adding account in account vector
+        public void Adding(PersonalAccount account)
+        {
+            //TODO...
+        }
+
     }
 }

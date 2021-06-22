@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Mir\\MyLife\\Courses\\FormacaoDOTNET\\Bank\\Bank\\Bank.csproj": {}
+    "C:\\Users\\Mir\\MyLife\\Courses\\FormacaoDOTNET\\CSharp-OO\\Bank\\Bank\\Bank.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Mir\\MyLife\\Courses\\FormacaoDOTNET\\Bank\\Bank\\Bank.csproj": {
+    "C:\\Users\\Mir\\MyLife\\Courses\\FormacaoDOTNET\\CSharp-OO\\Bank\\Bank\\Bank.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Mir\\MyLife\\Courses\\FormacaoDOTNET\\Bank\\Bank\\Bank.csproj",
+        "projectUniqueName": "C:\\Users\\Mir\\MyLife\\Courses\\FormacaoDOTNET\\CSharp-OO\\Bank\\Bank\\Bank.csproj",
         "projectName": "Bank",
-        "projectPath": "C:\\Users\\Mir\\MyLife\\Courses\\FormacaoDOTNET\\Bank\\Bank\\Bank.csproj",
+        "projectPath": "C:\\Users\\Mir\\MyLife\\Courses\\FormacaoDOTNET\\CSharp-OO\\Bank\\Bank\\Bank.csproj",
         "packagesPath": "C:\\Users\\Mir\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Mir\\MyLife\\Courses\\FormacaoDOTNET\\Bank\\Bank\\obj\\",
+        "outputPath": "C:\\Users\\Mir\\MyLife\\Courses\\FormacaoDOTNET\\CSharp-OO\\Bank\\Bank\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -65,7 +65,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     }

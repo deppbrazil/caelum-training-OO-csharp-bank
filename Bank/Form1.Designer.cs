@@ -44,6 +44,7 @@ namespace Bank
             this.comboBoxAccounts = new System.Windows.Forms.ComboBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.btnAddAccount = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -173,7 +174,7 @@ namespace Bank
             this.btnBalanceReport.ForeColor = System.Drawing.SystemColors.Control;
             this.btnBalanceReport.Location = new System.Drawing.Point(22, 589);
             this.btnBalanceReport.Name = "btnBalanceReport";
-            this.btnBalanceReport.Size = new System.Drawing.Size(387, 40);
+            this.btnBalanceReport.Size = new System.Drawing.Size(176, 40);
             this.btnBalanceReport.TabIndex = 11;
             this.btnBalanceReport.Text = "Relatório";
             this.btnBalanceReport.UseVisualStyleBackColor = false;
@@ -211,11 +212,25 @@ namespace Bank
             this.label5.TabIndex = 13;
             this.label5.Text = "Titular";
             // 
+            // btnAddAccount
+            // 
+            this.btnAddAccount.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btnAddAccount.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnAddAccount.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnAddAccount.Location = new System.Drawing.Point(233, 589);
+            this.btnAddAccount.Name = "btnAddAccount";
+            this.btnAddAccount.Size = new System.Drawing.Size(176, 40);
+            this.btnAddAccount.TabIndex = 14;
+            this.btnAddAccount.Text = "Adicionar Conta";
+            this.btnAddAccount.UseVisualStyleBackColor = false;
+            this.btnAddAccount.Click += new System.EventHandler(this.btnAddAccount_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(435, 660);
+            this.ClientSize = new System.Drawing.Size(459, 670);
+            this.Controls.Add(this.btnAddAccount);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.btnBalanceReport);
             this.Controls.Add(this.groupBox1);
@@ -249,6 +264,7 @@ namespace Bank
         private System.Windows.Forms.ComboBox comboBoxAccounts;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button btnAddAccount;
     }
 }
 
